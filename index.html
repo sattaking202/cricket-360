@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="CRICKET 360 — Every Ball. Every Update. Live cricket scores, fixtures, results and cricket news.">
+<meta property="og:title" content="CRICKET 360 | Every Ball. Every Update.">
+<meta property="og:description" content="Live cricket scores, match updates and the latest cricket news.">
+<meta property="og:type" content="website">
+<title>CRICKET 360 — Every Ball. Every Update.</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><img src="/assets/logo.svg" alt="CRICKET 360 logo"><span>CRICKET <b>360</b><small>EVERY BALL. EVERY UPDATE.</small></span></a>
+<nav><a href="#scores">Scores</a><a href="#fixtures">Fixtures</a><a href="#news">News</a><a href="#about">About</a></nav>
+<button id="shareBtn" class="share-btn" aria-label="Share website">↗ <span>Share</span></button></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow"><i></i> THE GAME NEVER STOPS</p><h1>EVERY BALL.<br><em>EVERY UPDATE.</em></h1><p class="hero-sub">Your cricket world, all in one place. Scores, fixtures, results and the stories behind the game.</p><div class="hero-actions"><a class="gold-btn" href="#scores">Explore Scores <b>→</b></a><a class="text-btn" href="#news">Latest News</a></div></div><div class="hero-art"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="ball"><span></span></div><div class="hero-tag">CRICKET<br><b>360°</b></div><div class="stat-float"><small>THE HOME OF CRICKET</small><strong>24/7</strong><span>Coverage</span></div></div><div class="hero-bottom"><span>01 / SCORES</span><span>02 / FIXTURES</span><span>03 / NEWS</span></div></section>
+<section class="section" id="scores"><div class="section-head"><div><p class="eyebrow">ON THE FIELD</p><h2>LIVE <em>& MATCH SCORES</em></h2></div><button id="refreshBtn" class="outline-btn">↻ Refresh</button></div><div id="scoreMeta" class="meta-line">Connecting to score feed…</div><div id="scoresGrid" class="score-grid"><div class="loading-card">Loading match centre…</div></div></section>
+<section class="section fixtures" id="fixtures"><div class="section-head"><div><p class="eyebrow">WHAT'S NEXT</p><h2>UPCOMING <em>FIXTURES</em></h2></div><span class="section-note">MATCH CENTRE</span></div><div id="fixturesGrid" class="fixture-grid"><div class="loading-card">Loading fixtures…</div></div></section>
+<section class="news-section" id="news"><div class="section-head"><div><p class="eyebrow">OFF THE FIELD</p><h2>THE LATEST <em>IN CRICKET</em></h2></div><a class="text-btn" href="https://news.google.com/search?q=cricket&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" rel="noopener">More headlines ↗</a></div><div id="newsGrid" class="news-grid"><div class="loading-card">Loading cricket headlines…</div></div><p class="source-note">Headlines are provided by external publishers. Open each story to read it at its original source.</p></section>
+<section class="feature-strip"><div><b>01</b><span><strong>LIVE UPDATES</strong><small>Match data from our score provider</small></span></div><div><b>02</b><span><strong>CRICKET NEWS</strong><small>Headlines with publisher links</small></span></div><div><b>03</b><span><strong>MADE FOR FANS</strong><small>Fast, clean and mobile friendly</small></span></div></section>
+<section class="about section" id="about"><p class="eyebrow">ABOUT CRICKET 360</p><h2>THE GAME IS BIGGER<br>THAN <em>THE SCORE.</em></h2><p>CRICKET 360 brings fans closer to every moment — from the first ball to the final result. Follow the action, discover the stories and stay connected to the game.</p></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><img src="/assets/logo.svg" alt=""><span>CRICKET <b>360</b><small>EVERY BALL. EVERY UPDATE.</small></span></a><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></div><small>© <span id="year"></span> CRICKET 360. All rights reserved.</small></footer>
+<div id="toast" role="status" aria-live="polite"></div><script src="/app.js" defer></script>
+</body></html>
